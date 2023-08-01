@@ -1,0 +1,79 @@
+/***Universal Styles***/
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+/***Header***/
+
+header {
+    display: fixed;
+    z-index: 10;
+    width: 100%;
+    border-bottom: 1px solid slategray;
+    padding: 0rem 5rem 0rem 2rem;
+}
+
+header .bar {
+    display: flex;
+    align-items: center;
+    height: 8rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/*Logo*/
+
+header .title {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    max-height: 8rem;
+    float: left;
+    transition-property: max-height;
+    transition-duration: 100ms;
+    transition-timing-function: linear;
+  }
+
+header .site-name {
+    font-family: 'Noto Serif Hebrew', serif;
+    font-size: 4rem;
+    padding-left: 2rem;
+}
+
+/*Nav*/
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav li {
+    padding: .5rem;
+    width: 6rem;
+    border-left: 1px solid darkgreen;
+}
+
+nav a {
+    color: green;
+    text-decoration: none;
+}
+
+/*Hovers*/
+
+header img:hover {
+    max-height: 8.5rem;
+  }
+
+header img:hover {
+    color: lightgray;
+}
+
+header nav li:hover {
+    background-color: lightgray;
+}
