@@ -108,6 +108,22 @@ header nav li:hover {
     font-size: 1.5rem;
 }
 
+.banner .content {
+    display: flex;
+}
+
+.banner .imgcontainer {
+    width: 50%;
+    max-width: 100rem;
+    padding: 1rem 1rem;
+    background-color: seashell;
+}
+
+.banner img {
+    width: auto;
+    max-height: 20rem;
+}
+
 /***Celtic-Britain***/
 
 .celtic-britain .content {
@@ -146,5 +162,5 @@ header nav li:hover {
 /*Celtic-Britain Hovers*/
 
 .celtic-britain button:hover {
-
+    background-color: darkslategray;
 }
