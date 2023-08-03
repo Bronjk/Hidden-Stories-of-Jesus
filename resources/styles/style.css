@@ -1,5 +1,5 @@
-/***Desktop Styles***/
-/***Universal Styles***/
+/*---Desktop Styles---*/
+/*---Universal Styles---*/
 
 html {
     font-family: Helvetica, sans-serif;
@@ -15,7 +15,28 @@ p {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/***Header***/
+button {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: seashell;
+    background-color: green;
+    border: none;
+    padding: .5rem;
+    margin-top: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 15px;
+}
+
+button:hover {
+    background-color: darkslategray;
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+/*---Header---*/
 
 header {
     display: fixed;
@@ -81,7 +102,7 @@ nav a {
     text-decoration: none;
 }
 
-/*Header Hovers*/
+/*Header Actions*/
 
 header img:hover {
     max-height: 6rem;
@@ -91,15 +112,15 @@ header nav li:hover {
     background-color: lightgray;
 }
 
-/***Banner***/
+/*---Banner---*/
 
 .banner {
-    background-color: rgb(189, 229, 189);
+    background-color: rgb(222, 243, 222);
     padding: 1rem 1rem;
 }
 
 .banner .center p {
-    margin-top: .5rem;
+    margin: .5rem 0 0 0;
     font-size: 1.5rem;
 }
 
@@ -109,29 +130,61 @@ header nav li:hover {
     padding-top: 1.5rem;
 }
 
-.banner .content {
+.banner .purchase {
     display: flex;
     justify-content: center;
-    background-image: url(../images/Mt.\ St.\ Michael\ Map.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+}
+
+.banner button {
+    width: 12rem;
+    margin: 2rem 1rem;
+}
+
+.banner .content {
+    display: flex;
+    background-color: gray;
 }
 
 .banner .imgcontainer {
+    display: flex;
     flex: 1;
+    align-items: center;
     padding: 1rem 1rem;  
 }
 
 .banner img {
     height: 25rem;
     display: block;
-    margin: auto;
     padding: 1rem;
-    background-color: rgb(218, 243, 218);
+    background-color: rgb(195, 230, 195);
 }
 
-/***Celtic-Britain***/
+.banner #left {
+    justify-content: flex-end;
+}
+
+.banner .graphic {
+    height: 15rem;
+    background-color: transparent;
+    padding-left: 2rem;
+}
+
+.banner .graphic p {
+    font-size: .5rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1963px) {
+     .banner .graphic {
+        display: none;
+    }
+
+    .banner #right p {
+        display: none;
+    }
+}
+
+/*---Celtic-Britain---*/
 
 .celtic-britain .content {
     display: flex;
@@ -141,7 +194,6 @@ header nav li:hover {
     width: 60%;
     max-width: 100rem;
     padding: 1rem 1rem;
-    background-color: seashell;
 }
 
 .celtic-britain img {
@@ -154,23 +206,12 @@ header nav li:hover {
 }
 
 .celtic-britain button {
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1rem;
-    color: seashell;
-    background-color: green;
-    border: none;
     width: 100%;
-    padding: .5rem;
-    margin-top: 1.5rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 15px;
 }
 
-/*Celtic-Britain Hovers*/
+/*Celtic-Britain Actions*/
 
-.celtic-britain button:hover {
-    background-color: darkslategray;
-}
+
 
 /***Tablet Styles***/
 @media only screen and (max-width: 1440px) {
