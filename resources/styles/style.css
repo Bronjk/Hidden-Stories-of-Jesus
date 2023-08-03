@@ -1,3 +1,4 @@
+/***Desktop Styles***/
 /***Universal Styles***/
 
 html {
@@ -30,7 +31,7 @@ header .bar {
     height: 6rem;
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding: 0rem 1.5rem 0rem 1.5rem;
+    padding: 0rem 1.5rem;
 }
 
 /*Logo*/
@@ -42,7 +43,7 @@ header .title {
 
 header img {
     max-height: 5.5rem;
-    float: left;
+    border: none;
     transition-property: max-height;
     transition-duration: 100ms;
     transition-timing-function: linear;
@@ -93,8 +94,13 @@ header nav li:hover {
 /***Banner***/
 
 .banner {
-    background-color:rgb(247, 230, 194);
+    background-color: rgb(189, 229, 189);
     padding: 1rem 1rem;
+}
+
+.banner .center p {
+    margin-top: .5rem;
+    font-size: 1.5rem;
 }
 
 .banner h1 {
@@ -103,25 +109,26 @@ header nav li:hover {
     padding-top: 1.5rem;
 }
 
-.banner .center p {
-    margin-top: .5rem;
-    font-size: 1.5rem;
-}
-
 .banner .content {
     display: flex;
+    justify-content: center;
+    background-image: url(../images/Mt.\ St.\ Michael\ Map.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .banner .imgcontainer {
-    width: 50%;
-    max-width: 100rem;
-    padding: 1rem 1rem;
-    background-color: seashell;
+    flex: 1;
+    padding: 1rem 1rem;  
 }
 
 .banner img {
-    width: auto;
-    max-height: 20rem;
+    height: 25rem;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    background-color: rgb(218, 243, 218);
 }
 
 /***Celtic-Britain***/
@@ -163,4 +170,11 @@ header nav li:hover {
 
 .celtic-britain button:hover {
     background-color: darkslategray;
+}
+
+/***Tablet Styles***/
+@media only screen and (max-width: 1440px) {
+    .banner img {
+        height: 15rem;
+    }
 }
