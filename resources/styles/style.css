@@ -116,7 +116,7 @@ header nav li:hover {
 
 .banner {
     background-color: rgb(222, 243, 222);
-    padding: 1rem 1rem;
+    padding: 1rem 0rem;
 }
 
 .banner .center p {
@@ -221,10 +221,26 @@ header nav li:hover {
     }
 }
 
-/*---Mobile Styles---*/
-
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 1000px) {
     html {
         font-size: 75%;
     }
+
+    .banner .graphic {
+        display: block;
+        height: 10rem;
+    }
+}
+
+/*---Mobile Styles---*/
+
+@media only screen and (max-width: 620px) {
+    .banner .graphic {
+        display: none;
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
 }
