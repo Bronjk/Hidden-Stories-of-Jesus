@@ -49,13 +49,15 @@ header {
 header .bar {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     height: 6rem;
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 0rem 1.5rem;
 }
 
-/*Logo*/
+/*Title*/
 
 header .title {
     display: flex;
@@ -70,7 +72,11 @@ header img {
     transition-timing-function: linear;
   }
 
-header .site-name {
+  header h1 {
+    white-space: nowrap;
+}
+
+  header .site-name {
     font-family: 'Noto Serif Hebrew', serif;
     font-size: 2rem;
     font-weight: normal;
@@ -240,6 +246,10 @@ header nav li:hover {
     }
 
     .content {
+        flex-wrap: wrap;
+    }
+
+    .bar {
         flex-wrap: wrap;
     }
 
